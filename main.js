@@ -19,9 +19,9 @@ app.post('/upload', async (req, res) => {
     })
   }
   AWS.config.update({
-    accessKeyId: process.env.AWS_KEY, // Access key ID
-    secretAccesskey: process.env.AWS_SECRET, // Secret access key
-    region: "us-east-1" //Region
+    accessKeyId: process.env.AWS_SECRET_ACCESS_KEY, // Access key ID
+    secretAccesskey: process.env.AWS_ACCESS_KEY_ID, // Secret access key
+    region: process.env.AWS_DEFAULT_REGION //Region
   })
   // Binary data base64
   const fileContent  = Buffer.from(
