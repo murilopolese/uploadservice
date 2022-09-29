@@ -25,9 +25,9 @@ Uploads files to an AWS S3 bucket and list them.
 
 ## Environment Variables
 ```
-AWS_KEY=
-AWS_SECRET=
-PASSWORD=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=
 BUCKET_NAME=
 ```
 
