@@ -52,7 +52,7 @@ app.get('/form', function(req, res) {
   res.send(
     `
     <form method="POST" action="/upload" enctype="multipart/form-data">
-    <input type="file" name="file_input" accept=".jpg,.jpeg,.png,.gif" />
+    <input type="file" name="file_input" />
     <input type="submit" />
     </form>
     `
